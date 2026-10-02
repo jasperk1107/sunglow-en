@@ -57,8 +57,12 @@
   h2.center { text-align: center; }
   .rating-line { display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 700; color: var(--teal); margin-bottom: 24px; }
   .stars { color: var(--gold); letter-spacing: 1px; font-size: 18px; line-height: 1; }
+  figure { margin: 0; }
   .media { margin: 8px 16px 28px; border-radius: 10px; overflow: hidden; }
   .media img { width: 100%; height: auto; }
+  .media.hero { overflow: visible; }
+  .media.hero img { border-radius: 10px; }
+  .media figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; }
   .media.square { max-width: 523px; margin-left: auto; margin-right: auto; }
 
   .byline { display: flex; align-items: center; gap: 12px; margin: 0 0 28px; font-size: 16px; }
@@ -167,7 +171,7 @@
 
   <div class="rating-line"><span class="stars">★★★★★</span><span class="fill">[number] reviews</span></div>
 
-  <div class="media"><img src="img/hero.jpg" alt="Woman in her fifties with a warm, even glow" width="1400" height="764"></div>
+  <figure class="media hero"><img src="img/hero.jpg" alt="Two portraits side by side: sun-damaged skin on the left, a warm, even glow on the right" width="1600" height="872"><figcaption>AI-generated illustration, not a customer photo.</figcaption></figure>
 
   <div class="byline">
     <img src="img/sun.png" alt="">
@@ -277,6 +281,7 @@
   <a class="btn btn-main js-cta" href="#offer">Get 50% off and try it risk-free →</a>
 
   <h2>Picture this</h2>
+  <div class="media"><img src="img/picture-this.jpg" alt="Woman in her fifties with a warm, even glow" width="1400" height="764" loading="lazy"></div>
   <p>You look in the mirror and see a warm, even glow. Your ankles are clear, and there's no color sitting in the lines around your eyes.</p>
   <p>A friend asks where you went on vacation.</p>
   <p>You tell her you've been having coffee.</p>
